@@ -14,4 +14,9 @@ func main() {
 
 	s := strings.Split(strings.TrimSpace(input), " ")
 	a := make([]int, 0, len(s))
+
+	for _, str := range s {
+		num, _ := strconv.Atoi(str)
+		a = append(a, num)
+	}
 }
