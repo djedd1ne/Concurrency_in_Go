@@ -19,4 +19,7 @@ func main() {
 		num, _ := strconv.Atoi(str)
 		a = append(a, num)
 	}
+
+	const par = 4
+	n := int(math.Max(math.Ceil(float64(len(s))/float64(par)), 1))
 }
